@@ -1,0 +1,1131 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 600px) {
+    header {
+        background: url(../imagem/papel\ amassado.png)no-repeat;
+        width: 100%;
+
+    }
+
+    nav .topo {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4rem;
+        z-index: 50;
+    }
+
+    .fita-flex {
+        margin-top: 4rem;
+    }
+
+    .topo h3 {
+        display: none;
+    }
+
+    .topo h4 {
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    nav .topo .btn-topo a {
+        font-size: .7rem;
+        margin: 0;
+    }
+
+
+    .logo img {
+        position: relative;
+        top: 0;
+        left: 1rem;
+        width: 9rem;
+    }
+
+
+    .logo-sejuve {
+        display: none;
+    }
+
+    #burguer {
+        position: relative;
+        top: 0;
+        right: 2rem;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    /* ESTILO MENU-MOBILE */
+
+    .menu {
+      background: #02569C;
+      width: 0%;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 100;
+      overflow: hidden;
+      transition: .3s;
+    }
+
+    .menu.abrir-menu {
+        width: 70%;
+    }
+
+    .menu.abrir-menu ~    .overlay-menu {
+        display: block;
+    }
+
+    .menu .btn-fechar {
+        padding: 1rem 4%;
+        cursor: pointer;
+    }
+
+    .menu .btn-fechar i {
+        color: #012B4E;
+        font-size: 2.5rem;
+    }
+
+    .menu nav ul {
+        text-align: right;
+    }
+
+    .menu nav ul li {
+        padding-top: 2rem;
+        list-style: none;
+    }
+
+    .menu nav ul li a {
+        display: block;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 400;
+        padding: 1rem 8%;
+    }
+
+    .menu nav ul li a:hover {
+        background: #012B4E;
+        color: rgba(255, 255, 255, 0.521);
+    }
+
+    .overlay-menu {
+        background: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 1000%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        display: none;
+    }
+
+    /* SECTION INICIO */
+
+    #inicio {
+        color: white;
+        margin: auto;
+        text-align: center;
+        width: 100%;
+        height: 68rem;
+        margin-top: 1rem;
+        border-radius: 10px;
+        box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .foto-lista .foto p {
+        font-size: .8rem;
+        transition: .3s;
+    }
+
+    .foto-lista .foto p:hover {
+        color: #02569C;
+    }
+
+    .foto video {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    video {
+       border-radius: 5px;
+    }
+
+    #data {
+        color: #303030;
+    }
+
+    /* section noticia */
+
+    #noticia {
+        color: white;
+        margin: auto;
+        text-align: center;
+        background: white;
+        width: 100%;
+        height: 112rem;
+        margin-top: 1rem;
+        border-radius: 10px;
+        box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.5);
+    }
+    
+    .noticia h1 {
+        color: #212121;
+        text-align: center;
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    
+    hr {
+        border: 2px solid #006a94;
+        width: 70%;
+        margin: auto;
+    }
+    
+    .noticia h3 {
+        font-size: 1.6rem;
+        padding: 1rem;
+        color: #212121;
+    }
+    
+    .noticia p {
+        font-size: 1.1rem;
+        color: #212121;
+        padding: 0rem 2rem;
+    }
+    
+    .foto-noticia {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: space-evenly;
+        align-items: center;
+       
+    }
+    
+    .noticias {
+        background: white;
+        width: 300px;
+        height: 300px;
+        margin: auto;
+        margin-top: 7rem;
+        border-radius: 10px;
+        box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.5);
+        transition: .3s;
+    }
+    
+    
+    .noticias img {
+        width: 100%;
+        height: 100%;
+        padding: .6rem;
+    }
+    
+    .noticias p {
+        font-size: .8rem;
+        font-weight: 700;
+    }
+
+    .noticias p:hover {
+        color: #02569C;
+    }
+
+
+    footer {
+        color: white;
+        background: #066BBD;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 2rem;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+    
+    .institucional {
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+        margin-right: 1rem;
+    }
+    
+    .institucional i {
+        font-size: .8rem;
+        margin: .2rem;
+    }
+    
+    .contatos {
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+        margin-right: 1rem;
+    }
+
+    .contatos i {
+        font-size: .8rem;
+        margin: .2rem;
+    }
+    
+    .endereco {
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+        margin-right: 1rem;
+    }
+
+    .endereco i {
+        font-size: .8rem;
+        margin: .2rem;
+    }
+    
+    .autor {
+        color: white;
+        background: #0560AA;
+        font-size: .6rem;
+        text-align: center;
+        padding: 1rem;
+    }
+
+ 
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    header {
+        background: url(../imagem/papel\ amassado.png)no-repeat;
+    }
+
+    nav .topo {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4rem;
+        z-index: 50;
+    }
+
+    .fita-flex {
+        margin-top: 4rem;
+    }
+
+    .topo a h3 {
+        display: block;
+        font-size: 1rem;
+    }
+
+    .topo h4 {
+        display: none;
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    nav .topo .btn-topo a {
+        font-size: .9rem;
+    }
+
+
+    .logo img {
+        position: relative;
+        top: 0;
+        left: 1rem;
+        width: 11rem;
+    }
+
+
+    .logo-sejuve {
+        display: none;
+    }
+
+    #burguer {
+        position: relative;
+        top: 0;
+        right: 2rem;
+        font-size: 2.2rem;
+        cursor: pointer;
+    }
+
+    /* ESTILO MENU-MOBILE */
+
+    .menu {
+      background: #02569C;
+      width: 0%;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 100;
+      overflow: hidden;
+      transition: .3s;
+    }
+
+    .menu.abrir-menu {
+        width: 70%;
+    }
+
+    .menu.abrir-menu ~    .overlay-menu {
+        display: block;
+    }
+
+    .menu .btn-fechar {
+        padding: 1rem 4%;
+        cursor: pointer;
+    }
+
+    .menu .btn-fechar i {
+        color: #012B4E;
+        font-size: 2.5rem;
+    }
+
+    .menu nav ul {
+        text-align: right;
+    }
+
+    .menu nav ul li {
+        padding-top: 2rem;
+        list-style: none;
+    }
+
+    .menu nav ul li a {
+        display: block;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 400;
+        padding: 1rem 8%;
+    }
+
+    .menu nav ul li a:hover {
+        background: #012B4E;
+        color: rgba(255, 255, 255, 0.521);
+    }
+
+    .overlay-menu {
+        background: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 1000%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        display: none;
+    }
+
+    /* SECTION INICIO */
+
+    #inicio {
+        color: white;
+        margin: auto;
+        text-align: center;
+        width: 100%;
+        height: 68rem;
+        margin-top: 1rem;
+        border-radius: 10px;
+        box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .foto-lista {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .foto-lista .foto p {
+        font-size: .9rem;
+        transition: .3s;
+    }
+
+
+    .foto-lista .foto p:hover {
+        color: #02569C;
+    }
+
+    #data {
+        color: #303030;
+    }
+
+    /* section noticia */
+
+    #noticia {
+        color: white;
+        margin: auto;
+        text-align: center;
+        background: white;
+        width: 100%;
+        height: 112rem;
+        margin-top: 1rem;
+        border-radius: 10px;
+        box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.5);
+    }
+    
+    .noticia h1 {
+        color: #212121;
+        text-align: center;
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    
+    hr {
+        border: 2px solid #006a94;
+        width: 70%;
+        margin: auto;
+    }
+    
+    .noticia h3 {
+        font-size: 1.6rem;
+        padding: 1rem;
+        color: #212121;
+    }
+    
+    .noticia p {
+        font-size: 1.1rem;
+        color: #212121;
+        padding: 0rem 2rem;
+    }
+    
+    .foto-noticia {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: space-evenly;
+        align-items: center;
+       
+    }
+    
+    .noticias {
+        background: white;
+        width: 300px;
+        height: 300px;
+        margin: auto;
+        margin-top: 6rem;
+        border-radius: 10px;
+        box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.5);
+        transition: .3s;
+    }
+    
+    
+    .noticias img {
+        width: 100%;
+        height: 100%;
+        padding: .6rem;
+    }
+    
+    .noticias p {
+        font-size: .9rem;
+        font-weight: 700;
+    }
+
+    .noticias p:hover {
+        color: #02569C;
+    }
+
+
+    footer {
+        color: white;
+        background: #066BBD;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 2rem;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+    
+    .institucional {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.2rem;
+        margin-right: 1rem;
+    }
+    
+    .institucional i {
+        font-size: .9rem;
+    }
+    
+    .contatos {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.2rem;
+        margin-right: 1rem;
+    }
+
+    .contatos i {
+        font-size: .9rem;
+    }
+    
+    .endereco {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.2rem;
+        margin-right: 1rem;
+    }
+
+    .endereco i {
+        font-size: .9rem;
+    }
+    
+    .autor {
+        color: white;
+        background: #0560AA;
+        font-size: .7rem;
+        text-align: center;
+        padding: 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 920px) {
+    header {
+        background: url(../imagem/papel\ amassado.png)no-repeat;
+    }
+
+    nav .topo {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4rem;
+        z-index: 50;
+    }
+
+    .fita-flex {
+        margin-top: 4rem;
+    }
+
+    .topo a h3 {
+        display: block;
+        font-size: 1.1rem;
+    }
+
+    .topo h4 {
+        display: none;
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    nav .topo .btn-topo a {
+        font-size: .9rem;
+    }
+
+
+    .logo img {
+        position: relative;
+        top: 0;
+        left: 1rem;
+        width: 14rem;
+    }
+
+
+    .logo-sejuve {
+        display: none;
+    }
+
+    #burguer {
+        position: relative;
+        top: 0;
+        right: 2rem;
+        font-size: 2.5rem;
+        cursor: pointer;
+    }
+
+    /* ESTILO MENU-MOBILE */
+
+    .menu {
+      background: #02569C;
+      width: 0%;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 100;
+      overflow: hidden;
+      transition: .3s;
+    }
+
+    .menu.abrir-menu {
+        width: 70%;
+    }
+
+    .menu.abrir-menu ~    .overlay-menu {
+        display: block;
+    }
+
+    .menu .btn-fechar {
+        padding: 1rem 4%;
+        cursor: pointer;
+    }
+
+    .menu .btn-fechar i {
+        color: #012B4E;
+        font-size: 2.5rem;
+    }
+
+    .menu nav ul {
+        text-align: right;
+    }
+
+    .menu nav ul li {
+        padding-top: 2rem;
+        list-style: none;
+    }
+
+    .menu nav ul li a {
+        display: block;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 400;
+        padding: 1rem 8%;
+    }
+
+    .menu nav ul li a:hover {
+        background: #012B4E;
+        color: rgba(255, 255, 255, 0.521);
+    }
+
+    .overlay-menu {
+        background: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 1000%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        display: none;
+    }
+
+    /* SECTION INICIO */
+
+    #inicio {
+        color: white;
+        margin: auto;
+        text-align: center;
+        width: 100%;
+        height: 68rem;
+        margin-top: 1rem;
+        border-radius: 10px;
+        box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .foto-lista {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .foto-lista .foto p {
+        font-size: 1rem;
+        transition: .3s;
+    }
+
+
+    .foto-lista .foto p:hover {
+        color: #02569C;
+    }
+
+    #data {
+        color: #303030;
+    }
+
+    /* section noticia */
+
+    #noticia {
+        color: white;
+        margin: auto;
+        text-align: center;
+        background: white;
+        width: 100%;
+        height: 112rem;
+        margin-top: 1rem;
+        border-radius: 10px;
+        box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.5);
+    }
+    
+    .noticia h1 {
+        color: #212121;
+        text-align: center;
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    
+    hr {
+        border: 2px solid #006a94;
+        width: 70%;
+        margin: auto;
+    }
+    
+    .noticia h3 {
+        font-size: 1.6rem;
+        padding: 1rem;
+        color: #212121;
+    }
+    
+    .noticia p {
+        font-size: 1.1rem;
+        color: #212121;
+        padding: 0rem 2rem;
+    }
+    
+    .foto-noticia {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: space-evenly;
+        align-items: center;
+       
+    }
+    
+    .noticias {
+        background: white;
+        width: 300px;
+        height: 300px;
+        margin: auto;
+        margin-top: 6rem;
+        border-radius: 10px;
+        box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.5);
+        transition: .3s;
+    }
+    
+    
+    .noticias img {
+        width: 100%;
+        height: 100%;
+        padding: .6rem;
+    }
+    
+    .noticias p {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .noticias p:hover {
+        color: #02569C;
+    }
+
+
+    footer {
+        color: white;
+        background: #066BBD;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 2rem;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+    
+    .institucional {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.4rem;
+        margin-right: 1rem;
+    }
+    
+    .institucional i {
+        font-size: 1rem;
+    }
+    
+    .contatos {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.4rem;
+        margin-right: 1rem;
+    }
+
+    .contatos i {
+        font-size: 1rem;
+    }
+    
+    .endereco {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.4rem;
+        margin-right: 1rem;
+    }
+
+    .endereco i {
+        font-size: 1rem;
+    }
+    
+    .autor {
+        color: white;
+        background: #0560AA;
+        font-size: .8rem;
+        text-align: center;
+        padding: 1rem;
+    }
+}
+
+
+@media screen and (min-width: 920px) and (max-width: 1200px) {
+    header {
+        background: url(../imagem/papel\ amassado.png)no-repeat;
+    }
+
+    nav .topo {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4rem;
+        z-index: 50;
+    }
+
+    .fita-flex {
+        margin-top: 4rem;
+    }
+
+    .topo a h3 {
+        display: block;
+        font-size: 1.1rem;
+    }
+
+    .topo h4 {
+        display: none;
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    nav .topo .btn-topo a {
+        font-size: .9rem;
+    }
+
+
+    .logo img {
+        position: relative;
+        top: 0;
+        left: 1rem;
+        width: 14rem;
+    }
+
+
+    .logo-sejuve {
+        display: none;
+    }
+
+    #burguer {
+        position: relative;
+        top: 0;
+        right: 2rem;
+        font-size: 2.5rem;
+        cursor: pointer;
+    }
+
+    /* ESTILO MENU-MOBILE */
+
+    .menu {
+      background: #02569C;
+      width: 0%;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 100;
+      overflow: hidden;
+      transition: .3s;
+    }
+
+    .menu.abrir-menu {
+        width: 70%;
+    }
+
+    .menu.abrir-menu ~    .overlay-menu {
+        display: block;
+    }
+
+    .menu .btn-fechar {
+        padding: 1rem 4%;
+        cursor: pointer;
+    }
+
+    .menu .btn-fechar i {
+        color: #012B4E;
+        font-size: 2.5rem;
+    }
+
+    .menu nav ul {
+        text-align: right;
+    }
+
+    .menu nav ul li {
+        padding-top: 2rem;
+        list-style: none;
+    }
+
+    .menu nav ul li a {
+        display: block;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 400;
+        padding: 1rem 8%;
+    }
+
+    .menu nav ul li a:hover {
+        background: #012B4E;
+        color: rgba(255, 255, 255, 0.521);
+    }
+
+    .overlay-menu {
+        background: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 1000%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        display: none;
+    }
+
+    /* SECTION INICIO */
+
+    #inicio {
+        color: white;
+        margin: auto;
+        text-align: center;
+        width: 100%;
+        height: 68rem;
+        margin-top: 1rem;
+        border-radius: 10px;
+        box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .foto-lista {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .foto-lista .foto p {
+        font-size: 1rem;
+        transition: .3s;
+    }
+
+
+    .foto-lista .foto p:hover {
+        color: #02569C;
+    }
+
+    #data {
+        color: #303030;
+    }
+
+    /* section noticia */
+
+    #noticia {
+        color: white;
+        margin: auto;
+        text-align: center;
+        background: white;
+        width: 100%;
+        height: 112rem;
+        margin-top: 1rem;
+        border-radius: 10px;
+        box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.5);
+    }
+    
+    .noticia h1 {
+        color: #212121;
+        text-align: center;
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    
+    hr {
+        border: 2px solid #006a94;
+        width: 70%;
+        margin: auto;
+    }
+    
+    .noticia h3 {
+        font-size: 1.6rem;
+        padding: 1rem;
+        color: #212121;
+    }
+    
+    .noticia p {
+        font-size: 1.1rem;
+        color: #212121;
+        padding: 0rem 2rem;
+    }
+    
+    .foto-noticia {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: space-evenly;
+        align-items: center;
+       
+    }
+    
+    .noticias {
+        background: white;
+        width: 300px;
+        height: 300px;
+        margin: auto;
+        margin-top: 6rem;
+        border-radius: 10px;
+        box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.5);
+        transition: .3s;
+    }
+    
+    
+    .noticias img {
+        width: 100%;
+        height: 100%;
+        padding: .6rem;
+    }
+    
+    .noticias p {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .noticias p:hover {
+        color: #02569C;
+    }
+
+
+    footer {
+        color: white;
+        background: #066BBD;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 2rem;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+    
+    .institucional {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.4rem;
+        margin-right: 1rem;
+    }
+    
+    .institucional i {
+        font-size: 1rem;
+    }
+    
+    .contatos {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.4rem;
+        margin-right: 1rem;
+    }
+
+    .contatos i {
+        font-size: 1rem;
+    }
+    
+    .endereco {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.4rem;
+        margin-right: 1rem;
+    }
+
+    .endereco i {
+        font-size: 1rem;
+    }
+    
+    .autor {
+        color: white;
+        background: #0560AA;
+        font-size: .8rem;
+        text-align: center;
+        padding: 1rem;
+    }
+}

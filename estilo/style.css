@@ -1,0 +1,872 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    font-family: "Poppins", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --first-color: hsl(38, 92%, 58%);
+    --first-color-light: hsl(38, 100%, 78%);
+    --first-color-alt: hsl(32, 75%, 50%);
+    --second-color: hsl(195, 75%, 52%);
+    --dark-color: hsl(212, 40%, 12%);
+    --white-color: hsl(0, 0%, 100%);
+    --body-color: hsl(212, 42%, 15%);
+    --container-color: hsl(212, 42%, 20%);
+}
+
+html {
+    min-height: 100vh;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+header {
+    background: url(../imagem/papel\ amassado.png) no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .topo {
+    background: #024D8C;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav .topo h3 {
+    color: var(--white-color);
+    font-size: .8rem;
+}
+
+nav .topo .btn-topo {
+    background: transparent;
+    padding: 1rem 10%;
+}
+
+nav .topo .btn-topo a {
+    color: white;
+    font-size: .8rem;
+    font-weight: 600;
+    margin-left: 2rem;
+}
+
+nav .topo .btn-topo a:hover {
+    font-weight: 700;
+}
+
+.fita-flex {
+    display: flex;
+}
+
+.fita1 {
+    border: 2px solid #02569C;
+    width: 16.66666666666667%;
+}
+.fita2 {
+    border: 2px solid #066BBD;
+    width: 16.66666666666667%;
+}
+.fita3 {
+    border: 2px solid #019EB1;
+    width: 16.66666666666667%;
+}
+.fita4 {
+    border: 2px solid #D35C78;
+    width: 16.66666666666667%;
+}
+.fita5 {
+    border: 2px solid #FCEA77;
+    width: 16.66666666666667%;
+}
+.fita6 {
+    border: 2px solid #066BBD;
+    width: 16.66666666666667%;
+}
+
+.logo {
+    font-size: 1rem;
+    /* padding: 2rem 15rem; */
+}
+
+
+.logo img {
+    color: white;
+    border-radius: 1rem;
+}
+
+.PBF {
+    display: block;
+    width: 10rem;
+    margin-right: 15rem;
+}
+
+.cad {
+    display: none;
+    color: #212121;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-right: 15rem;
+}
+
+.fita-baixa {
+    border: 2rem solid #024D8C;
+}
+
+section {
+    color: white;
+    margin: auto;
+    text-align: center;
+    background: white;
+    width: 90%;
+    height: 100vh;
+    margin-top: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.5);
+}
+
+section h1 {
+    color: #212121;
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+hr {
+    border: 2px solid #006a94;
+    width: 70%;
+    margin: auto;
+}
+
+section h3 {
+    font-size: 1.6rem;
+    padding: 1rem;
+    color: #212121;
+}
+
+section p {
+    font-size: 1.1rem;
+    color: #212121;
+    padding: 0rem 2rem;
+}
+
+.foto-lista {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.foto {
+    background: white;
+    width: 300px;
+    height: 300px;
+    margin-top: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.5);
+    transition: .3s;
+}
+
+.foto:hover {
+    transform: scale(1.03);
+    background: wheat;
+}
+
+.foto img {
+    width: 100%;
+    height: 100%;
+    padding: .6rem;
+}
+
+.foto p {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.foto button {
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    background: #006a94;
+    width: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.fita-flex2 {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.fitaf1 {
+    border: 2px solid #02569C;
+    width: 16.66666666666667%;
+}
+.fitaf2 {
+    border: 2px solid #066BBD;
+    width: 16.66666666666667%;
+}
+.fitaf3 {
+    border: 2px solid #019EB1;
+    width: 16.66666666666667%;
+}
+.fitaf4 {
+    border: 2px solid #D35C78;
+    width: 16.66666666666667%;
+}
+.fitaf5 {
+    border: 2px solid #FCEA77;
+    width: 16.66666666666667%;
+}
+.fitaf6 {
+    border: 2px  solid #066BBD;
+    width: 16.66666666666667%;
+}
+
+footer {
+    color: white;
+    background: #066BBD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.institucional {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    margin-right: 1rem;
+}
+
+.institucional i {
+    font-size: .8rem;
+}
+
+.contatos {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    margin-right: 1rem;
+}
+
+.endereco {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    margin-right: 1rem;
+}
+
+.autor {
+    color: white;
+    background: #0560AA;
+    font-size: .8rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+@media screen and (min-width: 280px) and (max-width: 373px) {
+    /* header {
+        background: blue;
+    } */
+
+    .logo img {
+        width: 7rem;
+    }
+
+    .PBF {
+        display: block;
+        width: 9rem;
+    }
+
+    .cad {
+        display: none;
+    }
+
+    section {
+        height: 100%;
+    }
+
+    section h1 {
+        font-size: 1.3rem;
+    }
+
+    section h3 {
+        font-size: 1.1rem;
+    }
+
+    section p {
+        font-size: .8rem;
+    }
+
+    .foto-lista {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .foto {
+        margin-bottom: 5rem;
+    }
+
+    .foto:hover {
+        transform: none;
+        background: wheat;
+    }
+
+    footer {
+        font-size: .6rem;
+    }
+}
+
+
+@media screen and (min-width: 374px) and (max-width: 457px) {
+    /* header {
+        background: red;
+    } */
+
+    .logo img {
+        width: 8rem;
+    }
+
+    .PBF {
+        display: block;
+        width: 10rem;
+    }
+
+    .cad {
+        display: none;
+    }
+
+    section {
+        height: 100%;
+    }
+
+    section h1 {
+        font-size: 1.6rem;
+    }
+
+    section h3 {
+        font-size: 1.2rem;
+    }
+
+    section p {
+        font-size: 1rem;
+    }
+
+    .foto-lista {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .foto {
+        margin-bottom: 5rem;
+    }
+
+    .foto:hover {
+        transform: none;
+        background: wheat;
+    }
+
+
+    footer {
+        font-size: .6rem;
+    }
+}
+
+
+@media screen and (min-width: 458px) and (max-width: 719px) {
+    /* header {
+        background: yellowgreen;
+    } */
+
+    .logo img {
+        width: 10rem;
+    }
+
+    .PBF {
+        display: block;
+        width: 12rem;
+    }
+
+    .cad {
+        display: none;
+    }
+
+    section {
+        height: 100%;
+    }
+
+    .foto-lista {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .foto {
+        margin-bottom: 5rem;
+    }
+
+    .foto:hover {
+        transform: none;
+        background: wheat;
+    }
+
+    footer {
+        font-size: .7rem;
+    }
+}
+
+
+@media screen and (min-width: 720px) and (max-width: 920px) {
+    /* header {
+        background: red;
+    } */
+
+    .logo img {
+        width: 10rem;
+    }
+
+    .PBF {
+        display: block;
+        width: 12rem;
+    }
+
+    .cad {
+        display: none;
+    }
+
+    section {
+        height: 100%;
+    }
+
+    .foto-lista {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .foto {
+        margin-bottom: 5rem;
+    }
+
+    footer {
+        font-size: .7rem;
+    }
+}
+
+
+@media screen and (min-width: 921px) and (max-width: 1200px) {
+    /* header {
+        background: greenyellow;
+    } */
+
+    .logo img {
+        width: 12rem;
+    }
+
+    section {
+        height: 100%;
+    }
+
+    .foto-lista {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .foto {
+        margin-bottom: 5rem;
+    }
+
+    footer {
+        font-size: .7rem;
+    }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 2000px) {
+    /* header {
+        background: purple;
+    } */
+
+    .logo img {
+        width: 12rem;
+    }
+
+    section {
+        height: 100%;
+    }
+
+    .foto-lista {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .foto {
+        margin-bottom: 5rem;
+    }
+
+    footer {
+        font-size: .7rem;
+    }
+}
+
+/* @media screen and (min-width: 0px) {
+
+    header {
+        background: red;
+        width: 100%;
+    }
+    .logo img {
+      width: 130px;
+    }
+    
+    .cad {
+        display: none;
+    }
+
+    .PBF {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        width: 100px;
+    }
+
+    section {
+        height: 100%;
+    }
+
+    section h1 {
+        font-size: 1.2rem;
+    }
+
+    section h3 {
+        font-size: 1.1rem;
+    }
+
+    section p {
+        font-size: .8rem;
+        padding: 0 0.4rem;
+    }
+
+    .foto-lista {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 2rem 1rem;
+    }
+
+    .foto {
+        margin: 3rem;
+        width: 100%;
+    }
+
+    .foto p {
+        font-size: .9rem;
+    }
+
+    .foto button {
+        font-size: .9rem;
+    }
+
+    .foto:hover {
+        transform: none;
+        background: wheat;
+    }
+
+    footer {
+        font-size: .6rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (min-width: 320px) {
+
+    header {
+        background: gray;
+    }
+    .logo img {
+      width: 150px;
+    }
+    
+    .cad {
+        display: none;
+    }
+
+    .PBF {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        width: 140px;
+    }
+
+    section {
+        height: 100%;
+    }
+
+    section h1 {
+        font-size: 1.4rem;
+    }
+
+    section h3 {
+        font-size: 1.3rem;
+    }
+
+    section p {
+        font-size: 1rem;
+        padding: 0 0.4rem;
+    }
+
+    .foto-lista {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 2rem 1rem;
+    }
+
+    .foto {
+        margin: 3rem;
+        width: 100%;
+        height: 100%;
+    }
+
+    .foto img {
+        width: 100%;
+    }
+
+    .foto p {
+        font-size: .9rem;
+    }
+
+    .foto button {
+        font-size: .9rem;
+    }
+
+    .foto:hover {
+        transform: none;
+        background: wheat;
+    }
+
+    footer {
+        font-size: .6rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (min-width: 500px) {
+
+    header {
+        background: black;
+    }
+    .logo img {
+      width: 200px;
+    }
+    
+    .cad {
+        display: none;
+    }
+
+    .PBF {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        width: 200px;
+    }
+
+    section {
+        height: 100%;
+    }
+
+    section h1 {
+        font-size: 2rem;
+    }
+
+    section h3 {
+        font-size: 1.6rem;
+    }
+
+    section p {
+        font-size: 1.1rem;
+        padding: 0 0.4rem;
+    }
+
+    section .foto-lista {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 1rem;
+    }
+
+    .foto {
+        margin: 3rem;
+    }
+
+    .foto img {
+        width: 100%;
+    }
+
+    .foto p {
+        font-size: .9rem;
+    }
+
+    .foto button {
+        font-size: .9rem;
+    }
+
+    .foto:hover {
+        transform: none;
+        background: wheat;
+    }
+
+    footer {
+        font-size: .6rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (min-width: 720px) {
+
+    header {
+        background: yellowgreen;
+        width: 100%;
+    }
+    .logo img {
+        width: 250px;
+      }
+      
+      .cad {
+          display: none;
+      }
+  
+      .PBF {
+          display: flex;
+          justify-content: end;
+          align-items: center;
+          width: 250px;
+      }
+
+      section h1 {
+        font-size: 2.5rem;
+      }
+
+      section h3 {
+        font-size: 2rem;
+      }
+
+      section p {
+        font-size: 1.5rem;
+      }
+
+      .foto-lista {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+        align-items: center;
+      }
+}
+
+@media screen and (min-width: 920px) {
+    header {
+        background: blue;
+        width: 100%;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    header {
+        background: green;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    header {
+        background: #212121;
+        width: 100%;
+    }
+
+    .logo img {
+        width: 300px;
+      }
+      
+      .cad {
+          display: block;
+      }
+  
+      .PBF {
+          display: none;
+      }
+  
+      section {
+          height: 100%;
+      }
+  
+      section h1 {
+          font-size: 3rem;
+      }
+  
+      section h3 {
+          font-size: 2.5rem;
+      }
+  
+      section p {
+          font-size: 1.6rem;
+          padding: 0 0.4rem;
+      }
+  
+      .foto-lista {
+          background: yellowgreen;
+          display: grid;
+          grid-template-columns: auto auto;
+          padding: 2rem 1rem;
+          width: 100%;
+      }
+  
+      .foto {
+          margin: 3rem;
+          width: 400px;
+      }
+
+      .foto img {
+        width: 100%;
+        height: 100%;
+      }
+  
+      .foto p {
+          font-size: .9rem;
+      }
+  
+      .foto button {
+          font-size: .9rem;
+      }
+  
+      .foto:hover {
+          transform: none;
+          background: wheat;
+      }
+  
+      footer {
+          font-size: .6rem;
+          display: flex;
+          flex-direction: column;
+      }
+} */
